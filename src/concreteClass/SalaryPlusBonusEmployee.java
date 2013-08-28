@@ -4,22 +4,16 @@
  */
 package concreteClass;
 
-
 public class SalaryPlusBonusEmployee extends SalaryEmployee {
 
     private int bonus;
-    
-    public SalaryPlusBonusEmployee() {
-	
-    }
-    
-    public SalaryPlusBonusEmployee(int bonus){
+
+    public SalaryPlusBonusEmployee(String name, int yrWorked, boolean goodEmployee, int income, int bonus) {
+	super(name, yrWorked, goodEmployee, income);
 	this.bonus = bonus;
     }
 
     public int getBonus() {
 	return bonus;
     }
-
-    
 }

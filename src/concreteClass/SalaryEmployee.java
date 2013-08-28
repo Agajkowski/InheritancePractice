@@ -1,19 +1,12 @@
-
 package concreteClass;
 
-
 public class SalaryEmployee extends Employee {
-    
-    private int income;
-    
-    
-    public SalaryEmployee() {
-    }
 
-    public SalaryEmployee(String name, int yrWorked, boolean goodEmployee) {
+    private int income;
+
+    public SalaryEmployee(String name, int yrWorked, boolean goodEmployee, int income) {
 	super(name, yrWorked, goodEmployee);
-	System.out.println("enter the salaried income of the employee.");
-	income = keyboard.nextInt();
+	this.income = income;
     }
 
     public String getSalIncome() {
@@ -23,8 +16,4 @@ public class SalaryEmployee extends Employee {
     public void changeIncome(int income) {
 	this.income = income;
     }
-    
-    
-    
-    
 }

@@ -1,28 +1,25 @@
-
 package concreteClass;
 
-
 public class HourlyEmployee extends Employee {
-    
+
     private double wage;
 
-    public HourlyEmployee() {
-	
-    }
-
-    public HourlyEmployee(String name, int yrWorked, boolean goodEmployee) {
+    public HourlyEmployee(String name, int yrWorked, boolean goodEmployee, double wage) {
 	super(name, yrWorked, goodEmployee);
-	System.out.println("enter the hourly wage of the employee.");
-	wage = keyboard.nextDouble();
+	setWage(wage);
     }
 
-    public String getHrWage() {
+    public String getHourWageFormatted() {
 	return "$" + wage;
     }
 
-    public void setWage(double wage) {
-	this.wage = wage;
+    public double getWageRaw() {
+	return wage;
     }
     
     
+
+    public final void setWage(double wage) { 
+	this.wage = wage;
+    }
 }
