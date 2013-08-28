@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package concreteClass;
+package abstractClass;
 
 public class SalaryPlusBonusEmployee extends SalaryEmployee {
 
@@ -20,6 +20,12 @@ public class SalaryPlusBonusEmployee extends SalaryEmployee {
     public final void setBonus(int bonus) {
 	this.bonus = bonus;
     }
+
+    @Override
+    public double getYearlyIncome() {
+	return super.getYearlyIncome() + bonus; 
+    }
+    
     
     
 }

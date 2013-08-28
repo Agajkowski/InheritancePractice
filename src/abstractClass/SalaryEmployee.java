@@ -1,4 +1,4 @@
-package concreteClass;
+package abstractClass;
 
 public class SalaryEmployee extends Employee {
 
@@ -15,5 +15,10 @@ public class SalaryEmployee extends Employee {
 
     public void changeIncome(int income) {
 	this.income = income;
+    }
+
+    @Override
+    public double getYearlyIncome() {
+	return income;
     }
 }

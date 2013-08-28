@@ -1,10 +1,10 @@
-package concreteClass;
+package abstractClass;
 
 /**
  *
  * @author alex
  */
-public class Employee {
+public abstract class Employee {
 
     private String name;
     private int yrWorked;
@@ -39,4 +39,6 @@ public class Employee {
     public String getName() {
 	return name;
     }
+    
+    public abstract double getYearlyIncome(); // My abstract method
 }
